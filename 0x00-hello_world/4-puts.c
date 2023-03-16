@@ -2,9 +2,12 @@
 /**
 *main - Entry point
 *
-*Return :Always 0 (success)
+*function that prints out with puts
+*
+*Return: Always 0 (success)
+*
+*returns success
 */
 int main(void)
-/*main - start */
 {puts("\"Programming is like building a multilingual puzzle");
 return (0); }
