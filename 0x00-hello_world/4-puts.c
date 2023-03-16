@@ -5,6 +5,6 @@
 *Return :Always 0 (success)
 */
 int main(void)
-/* A C program */
+/*main - start */
 {puts("\"Programming is like building a multilingual puzzle");
 return (0); }
