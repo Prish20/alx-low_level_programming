@@ -6,7 +6,8 @@
 */
 int main(void)
 /**
-*Description:A C program
+*
+*Description: A program
 */
 {puts("\"Programming is like building a multilingual puzzle");
 return (0); }
