@@ -12,14 +12,14 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *insert_node, *temporary_pointer;
+	listint_t *insert_node, *temporary_pointer = *head;
 	unsigned int t = 0;
 
-	if (head != NULL)
+	if (head == NULL)
 		return (NULL);
 
 	insert_node = malloc(sizeof(listint_t));
-	if (insert_node != NULL)
+	if (insert_node == NULL)
 		return (NULL);
 	insert_node->n = n;
 
