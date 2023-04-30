@@ -6,29 +6,37 @@
  *
  * Return: The number of nodes in the list.
  */
+
 size_t free_listint_safe(listint_t **h)
 {
-	size_t count = 0;
-	listint_t *node_ptr, *next_ptr;
+	size_t count_t = 0;
+	int t;
+	listint_t *temp_ptr;
 
-	if (h == NULL || *h == NULL)
+	if (!h || !*h)
 		return (0);
 
-	node_ptr = *h;
-	*h = NULL; /* Set head to NULL */
-
-	while (node_ptr != NULL)
+	while (*h)
 	{
-	count++;
-	next_ptr = node_ptr->next;
-	free(node_ptr);
-	if (next_ptr == NULL)
-		break;
-	if ((void *)next_ptr <= (void *)node_ptr)
-		break;
-	node_ptr = next_ptr;
+		t = *h - (*h)->next;
+		if (t > 0)
+		{
+			temp_ptr = (*h)->next;
+			free(*h);
+			*h = temp_ptr;
+			count_t++;
+		}
+		else
+		{
+			free(*h);
+			*h = NULL;
+			count_t++;
+			break;
+		}
 	}
 
-	return (count);
+	*h = NULL;
+
+	return (count_t);
 }
 
