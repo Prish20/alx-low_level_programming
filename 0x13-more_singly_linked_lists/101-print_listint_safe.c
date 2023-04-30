@@ -10,6 +10,9 @@ size_t print_listint_safe(const listint_t *head)
 	size_t count_n = 0;
 	const listint_t *temp_ptr;
 
+	if (head == NULL)
+		exit(98);
+
 	while (head)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
@@ -22,7 +25,9 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("-> [%p] %d\n", (void *)head, head->n);
 			break;
+
 		}
+
 	}
 
 	return (count_n);
