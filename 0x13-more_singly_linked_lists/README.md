@@ -1,5 +1,3 @@
-		TASKS TO BE COMPLETED
-
 		PRINTLIST
 
 Write a function that prints all the elements of a listint_t list.
