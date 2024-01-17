@@ -7,7 +7,7 @@
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "${default}"
         }
     ],
     "version": 4
