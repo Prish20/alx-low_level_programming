@@ -90,3 +90,7 @@ What is the `space complexity`(worst case) of an iterative linear search algorit
 ### 4. Big O #2
 
 What is the time `complexity` (worst case) of a binary search in an array of `size n`?
+
+### 5. Big O #3
+
+What is the space `complexity` (worst case) of a binary search in an array of `size n`?
