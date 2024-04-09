@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
+#include "search_algos.h"
 
 /**
  * main - Entry point
